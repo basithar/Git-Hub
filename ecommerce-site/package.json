@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce-site",
+  "version": "1.0.0",
+  "description": "An e-commerce site project with frontend and backend components.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node packages/backend/src/index.js",
+    "dev": "concurrently \"npm run start --prefix packages/backend\" \"npm run start --prefix packages/frontend\"",
+    "build": "npm run build --prefix packages/frontend"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ecommerce-site.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "frontend",
+    "backend",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
